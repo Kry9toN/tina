@@ -132,7 +132,7 @@ function tentukantinggi(){tinggi = iniakhir.offsetHeight;}
 setInterval(tentukantinggi,200);
 console.log(tinggi);
 
-fungsiAud=0;function playaud(){if(fungsiAud==0){fungsiAud=1;audio.play();}}
+fungsiAud=0;function playaud(){if(fungsiAud==0){fungsiAud=1;audio.loop = true;audio.play();}}
 function keatas(){window.scrollTo(0, 0);}
 
 //window.addEventListener("load", (event) => {
