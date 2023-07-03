@@ -22,7 +22,7 @@ function lanjtextsec(){textsec3.style="display:none";textsec3b.style="opacity:1"
 var range = document.querySelector("input");
 var rangeval = document.querySelector(".inivalue");
 rangeval.textContent = range.value + "%";
-range.oninput = function(){rangeval.textContent = this.value + "%";persen=rangeval.textContent;pesanwhatsapp = pesanWA + persen + "!";}
+range.oninput = function(){rangeval.textContent = this.value + "%";persen=rangeval.textContent;pesanwhatsapp = pesanWA + persen + "!❤️❤️❤️❤️❤️❤️❤️❤️";}
 
 var date = new Date();
 var days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
