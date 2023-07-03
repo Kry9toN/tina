@@ -8,7 +8,7 @@ tekspalingakhir = palingakhir.innerHTML; palingakhir.innerHTML="";
 
 function fungsimau(){
     fungsi=0;tes();
-    setTimeout(mulaitextsec,2500);
+    setTimeout(mulaitextsec,4000);
 }
 async function fungsigamau(){
    await swalst.fire({title: '' + kataditolak.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src,});
@@ -17,7 +17,7 @@ async function fungsigamau2(){
     await swalst.fire({title: '' + kataditolak2.innerHTML, timer: 2000, imageUrl: '' + stikerditolak2.src,});
 }
 function mulaitextsec(){textsec3.style="opacity:0";setTimeout(lanjtextsec,400)}
-function lanjtextsec(){textsec3.style="display:none";textsec3b.style="opacity:1";document.querySelector(".kolomrange").style="display:flex";setTimeout(smn,1350);}
+function lanjtextsec(){textsec3.style="display:none";textsec3b.style="opacity:1";document.querySelector(".kolomrange").style="display:flex";setTimeout(smn,700);}
 
 var range = document.querySelector("input");
 var rangeval = document.querySelector(".inivalue");
