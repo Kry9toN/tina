@@ -1,62 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>I Love You</title>
-    <script>
-        onload = function() {
-            var doc = document;
-            
-            function feedin(feed, speed) {
-                var filter = 0;
-                feed.style.opacity = 0;
-                feed.style.MozOpacity = 0;
-                var timer = setInterval(function() {
-                    filter ++;
-                    feed.style.opacity = (filter / 10);
-                    feed.style.MozOpacity = (filter / 10);
-                    if (filter == 10) {
-                        clearInterval(timer);
-                    }
-                }, speed)
-            }
+  <title>I Love You Tina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      margin-top: 40vh;
+    }
 
-            var love = [
-                [36, 37, 38, 72, 107, 142, 176, 177, 178],
-                [41, 76, 111, 146, 181, 182, 183],
-                [185, 150, 115, 80, 45, 46, 47, 82, 117, 152, 187],
-                [186, 49, 84, 119, 154, 190],
-                [156, 121, 86, 51, 53, 54, 55, 88, 123, 158, 193, 124, 125, 194, 195],
-                [58, 93, 128, 129, 130, 95, 60, 164, 199],
-                [202, 167, 132, 97, 62, 63, 64, 99, 134, 169, 204],
-                [203, 66, 101, 136, 171, 206, 207, 208, 173, 138, 103, 68]
-            ];
+    .animated-text {
+      display: inline-block;
+      position: relative;
+    }
 
-            for (i = 0; i < 245; i++) {
-                var box = doc.createElement('div');
-                with (doc.body.appendChild(box).style) {
-                    if (i % 35 == 0) { clear = 'both'; }
-                    border = 'solid #234 1px';
-                    width = '20px';
-                    height = '20px';
-                    margin = '2px';
-                    float = 'left';
-                }
-            }
+    .animated-text span {
+      display: inline-block;
+      position: relative;
+    }
 
-            var mess = doc.getElementsByTagName('div');
-            var i = 0, j = 0;
-            setInterval(function() {
-                feedin(mess[love[i][j]], 25);
-                mess[love[i][j]].style.background = '#F39';
-                j++;
-                if (i == love.length) { clearInterval(timer); }
-                if (j == love[i].length) { i++; j = 0; }
-            }, 100);
-        }
-    </script>
+    .animated-text span:before,
+    .animated-text span:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #ff3860;
+      border-radius: 50%;
+      top: -8px;
+    }
+
+    .animated-text span:before {
+      left: -14px;
+    }
+
+    .animated-text span:after {
+      right: -14px;
+    }
+
+    @keyframes beatHeart {
+      0% {
+        transform: scale(0.8);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(0.8);
+      }
+    }
+
+    .animated-text span:before,
+    .animated-text span:after {
+      animation: beatHeart 1s ease-in-out infinite;
+    }
+  </style>
 </head>
 <body>
-    <audio src="./audio/die4u.mp3" autoplay loop></audio>
+  <div class="animated-text">
+    <span>I</span>
+    <span>Love</span>
+    <span>You</span>
+    <span>Tina</span>
+  </div>
 </body>
 </html>
