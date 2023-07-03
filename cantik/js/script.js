@@ -70,7 +70,7 @@ if(fungsi==0){
  skrg++;
  //if(skrg<=2){setTimeout(smn,700);}
  if(skrg==2){setTimeout(muncultombol,1200);}
- if(skrg==4){initeksnimasi=initeksnimasi + "<b>" + rangeval.textContent + "</b> 🤭❤️";setTimeout(katateksnimasi,1300);}
+ if(skrg==4){initeksnimasi=initeksnimasi + "<b>" + rangeval.textContent + "</b> 🤭❤️❤️❤️";setTimeout(katateksnimasi,1300);}
  if(skrg==5){setTimeout(muncultombol2,1200);}
  if(skrg>=6){initom.style="opacity:0;bottom:0;";}
 }
