@@ -8,7 +8,7 @@ tekspalingakhir = palingakhir.innerHTML; palingakhir.innerHTML="";
 
 function fungsimau(){
     fungsi=0;tes();
-    setTimeout(mulaitextsec,4000);
+    setTimeout(mulaitextsec,3000);
 }
 async function fungsigamau(){
    await swalst.fire({title: '' + kataditolak.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src,});
